@@ -1,4 +1,90 @@
 .App {
+  background-color: #2a2a2a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  justify-content: center; /* Horizontally center the columns */
+  align-items: center; /* Vertically center the content */
+  height: 100vh;
+}
+
+.columns {
+  display: flex;
+  gap: 20px; /* Space between columns */
+}
+
+.column {
+  flex: 1; /* Each column takes equal space */
+  min-width: 200px; /* Prevents collapsing */
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.square_wrapper {
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-100%); /* Start position (off-screen left) */
+  animation: slideIn 3s ease-out 1s forwards; /* Delay for 30s, then animate */
+}
+
+
+/* Animation with borders in square */
+@keyframes borderAnimation {
+  0% { border-image-source: linear-gradient(45deg, #ff7f7f, #ffb347, #fffacd); }
+  25% { border-image-source: linear-gradient(45deg, #ffb347, #fffacd, #ff7f7f); }
+  50% { border-image-source: linear-gradient(45deg, #ffb347, #fffacd, #ff7f7f,); }
+  75% { border-image-source: linear-gradient(45deg, #fffacd, #ff7f7f, #ffb347); }
+  100% { border-image-source: linear-gradient(45deg, #ff7f7f, #ffb347, #fffacd); }
+}
+
+.square_outside {
+  width: 40vw;  /* Responsive size */
+  max-width: 350px;
+  aspect-ratio: 1; /* Keep it square */
+  border: 5px solid;
+  transform: skew(-20deg, 5deg); /* Outer skew */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-image-slice: 1; /* Ensures full coverage */
+  border-image-source: linear-gradient(45deg, red, orange, yellow);
+  animation: borderAnimation 3s infinite linear;
+}
+
+.square_inside {
+  width: 90%; /* Adjust inside square relative to the outer one */
+  height: 90%;
+  border: 5px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-image-slice: 1; /* Ensures full coverage */
+  border-image-source: linear-gradient(45deg, red, orange, yellow);
+  animation: borderAnimation 4s infinite linear;
+}
+
+.text_inside_square {
+  transform: skew(20deg, -5deg); /* Undo skew */
+  text-align: center;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +121,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

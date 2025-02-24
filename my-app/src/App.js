@@ -1,24 +1,51 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import React, {useEffect, useState} from 'react';
 import './App.css';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={'App'}>
+    <div className={'container'}>
+      <div className={'columns'}>
+        <div className={'column'}>
+        
+            <div className={'square_wrapper slide-in'}>
+              <div className={'square_outside'}>
+                <div className={'square_inside'}>
+                  <p className={'text_inside_square'}>
+                    Throughout my life, I have faced many challenges and have always persevered, approaching each obstacle 
+                    with determination and a solutions-driven mindset.
+                  </p>
+                </div>
+              </div>
+            </div>
+       
+          
+        </div>
+  
+        <div className={'column'}>
+          <p>This is the second column where you can add more content.</p>
+        </div>
+      </div>
     </div>
+  </div>
+    // <div className="App">
+    //   <header className="App-header">
+    //     <img src={logo} className="App-logo" alt="logo" />
+    //     <p>
+    //       Edit <code>src/App.js</code> and save to reload.
+    //     </p>
+    //     <a
+    //       className="App-link"
+    //       href="https://reactjs.org"
+    //       target="_blank"
+    //       rel="noopener noreferrer"
+    //     >
+    //       Learn React
+    //     </a>
+    //   </header>
+    // </div>
   );
 }
 
