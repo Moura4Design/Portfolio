@@ -1,28 +1,7 @@
 .App {
   background-color: #2a2a2a;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   color: white;
-  
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  justify-content: center; /* Horizontally center the columns */
-  align-items: center; /* Vertically center the content */
-  height: 100vh;
-}
-
-.columns {
-  display: flex;
-  gap: 20px; /* Space between columns */
-}
-
-.column {
-  flex: 1; /* Each column takes equal space */
-  min-width: 200px; /* Prevents collapsing */
 }
 
 @keyframes slideIn {
@@ -42,7 +21,6 @@
   animation: slideIn 3s ease-out 1s forwards; /* Delay for 30s, then animate */
 }
 
-
 /* Animation with borders in square */
 @keyframes borderAnimation {
   0% { border-image-source: linear-gradient(45deg, #ff7f7f, #ffb347, #fffacd); }
@@ -53,7 +31,7 @@
 }
 
 .square_outside {
-  width: 40vw;  /* Responsive size */
+  width: 30vw;  /* Responsive size */
   max-width: 350px;
   aspect-ratio: 1; /* Keep it square */
   border: 5px solid;
@@ -82,6 +60,10 @@
 .text_inside_square {
   transform: skew(20deg, -5deg); /* Undo skew */
   text-align: center;
+  padding: 10px;
+  /*opacity: 0;  Initially hidden */
+  /*transform: translateX(-100%);  Start position (off-screen left) */
+  /*animation: slideIn 4s ease-out 1s forwards; /* Delay for 30s, then animate */
 }
 
 /* .App {
