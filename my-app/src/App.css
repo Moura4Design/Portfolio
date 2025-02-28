@@ -1,7 +1,18 @@
 .App {
-  background-color: #2a2a2a;
+  background: #212529;
+  /* background-color: #2a2a2a; */
   min-height: 100vh;
   color: white;
+}
+
+/* Navbar*/
+.nav-link {
+  background: linear-gradient(45deg, #ff7f7f, #ffb347, #fffacd);
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text; /* WebKit-specific */
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Ensures text stays transparent in non-supported browsers */
+  display: inline-block;
 }
 
 @keyframes slideIn {
@@ -40,7 +51,7 @@
   justify-content: center;
   align-items: center;
   border-image-slice: 1; /* Ensures full coverage */
-  border-image-source: linear-gradient(45deg, red, orange, yellow);
+  border-image-source: linear-gradient(red, orange, yellow);
   animation: borderAnimation 3s infinite linear;
 }
 
