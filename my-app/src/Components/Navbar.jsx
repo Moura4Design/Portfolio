@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navbar = ({scrollToAbout }) => {
+const Navbar = ({ scrollToAbout }) => {
   return (
     <React.Fragment>
       <nav className={"navbar navbar-expand-lg navbar-dark bg-dark"}>
@@ -21,14 +21,15 @@ const Navbar = ({scrollToAbout }) => {
           <div className={"collapse navbar-collapse justify-content-center"} id={"navbarNavAltMarkup"}>
             <div className={"navbar-nav mx-auto fs-4"}>
               <Link className={"nav-link active"} aria-current={"page"} to={"/"}>Home</Link>
-              <button className={"nav-link btn btn-link"} onClick={scrollToAbout}>About</button>
+              <button className={"nav-link btn btn-link"} onClick={() => scrollToAbout('about')}>About</button>
               {/* <Link className={"nav-link"} to={"/about"}>About</Link> */}
               <a className={"nav-link"} href={"/"}>Expertise</a>
               <a className={"nav-link"} href={"/"}>Work</a>
               <a className={"nav-link"} href={"/"}>Contact</a>
             </div>
             <div className={'navbar-nav ms-auto fs-4'}>
-              <a className={"nav-link"} href={"/"}><i className={'bi bi-github'} /></a>
+              <Link className={"nav-link"} target="_blank" rel="noopener noreferrer" to={"https://www.linkedin.com/in/tania-moura/"}><i className={'bi bi-linkedin'} /></Link>
+              <Link className={"nav-link"} target="_blank" rel="noopener noreferrer" to={"https://github.com/Moura4Design"}><i className={'bi bi-github'} /></Link>
             </div>
           </div>
         </div>

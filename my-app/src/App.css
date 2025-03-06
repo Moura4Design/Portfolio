@@ -51,7 +51,7 @@
   justify-content: center;
   align-items: center;
   border-image-slice: 1; /* Ensures full coverage */
-  border-image-source: linear-gradient(red, orange, yellow);
+  border-image-source: linear-gradient(45deg, red, orange, yellow);
   animation: borderAnimation 3s infinite linear;
 }
 
@@ -76,6 +76,19 @@
   /*transform: translateX(-100%);  Start position (off-screen left) */
   /*animation: slideIn 4s ease-out 1s forwards; /* Delay for 30s, then animate */
 }
+
+.title {
+  font-size: 3rem;
+  background: linear-gradient(45deg, #ff7f7f, #ffb347, #fffacd);
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text; /* WebKit-specific */
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Ensures text stays transparent in non-supported browsers */
+  border-bottom: 3px solid transparent; /* Placeholder to define the border */
+  border-image: linear-gradient(45deg, #ff7f7f, #ffb347, #fffacd);
+  border-image-slice: 1;
+}
+
 
 /* .App {
   text-align: center;

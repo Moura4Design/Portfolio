@@ -5,8 +5,12 @@ import About from './About';
 const Home = () => {
   const aboutRef = useRef(null);
 
-  const scrollToAbout = () => {
-    aboutRef.current?.scrollIntoView({ behavior: "smooth" });
+  const scrollToAbout = (navbar) => {
+    if(navbar === 'about') {
+      console.log('navbar ==>', navbar)
+      aboutRef.current?.scrollIntoView({ behavior: "smooth" });
+    } 
+    
   };
 
   return (
@@ -31,9 +35,9 @@ const Home = () => {
         </div>
       </div>
     </div>
-    <div ref={aboutRef} className={'section'}>
+    <section ref={aboutRef} className={'section'}>
       <About />
-    </div>
+    </section>
   </div>
   )
 }
