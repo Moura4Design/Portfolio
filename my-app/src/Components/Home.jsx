@@ -1,21 +1,26 @@
 import React, {useRef} from 'react';
 import Navbar from './Navbar';
 import About from './About';
+import Expertise from './Expertise';
 
 const Home = () => {
   const aboutRef = useRef(null);
+  const expertiseRef = useRef(null)
 
-  const scrollToAbout = (navbar) => {
+  const scrollToMenu = (navbar) => {
     if(navbar === 'about') {
       console.log('navbar ==>', navbar)
       aboutRef.current?.scrollIntoView({ behavior: "smooth" });
     } 
+    if (navbar === 'expertise') {
+      expertiseRef.current?.scrollIntoView({ behavior: "smooth" })
+    }
     
   };
 
   return (
     <div className={'App'}>
-    <Navbar scrollToAbout={scrollToAbout} />
+    <Navbar scrollToMenu={scrollToMenu} />
     <div className={'container'}>
       <div className={'row justify-content-center align-items-center vh-100'}>
         <div className={'col-md-6 justify-content-center align-items-center'}>
@@ -37,6 +42,9 @@ const Home = () => {
     </div>
     <section ref={aboutRef} className={'section'}>
       <About />
+    </section>
+    <section ref={expertiseRef} className={'section'}>
+      <Expertise />
     </section>
   </div>
   )

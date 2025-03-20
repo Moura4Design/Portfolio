@@ -6,7 +6,10 @@ const About = () => {
       <div className='container'>
         <div className={'row'}>
           <div className={'col-md-6'}>
-            <h2 className={'text-center title'}>About</h2>
+            <div className={'title-wrapper'}>
+              <h2 className={'text-center title'}>About</h2>
+            </div>
+            
             <div className={'p-3'}>
               <p>I am a Frontend Developer with over 5 years of experience, known for my responsibility, honesty, and 
                 unwavering commitment to problem-solving. Throughout my life, I have faced many challenges and have always 

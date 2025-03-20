@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navbar = ({ scrollToAbout }) => {
+const Navbar = ({ scrollToMenu }) => {
   return (
     <React.Fragment>
       <nav className={"navbar navbar-expand-lg navbar-dark bg-dark"}>
@@ -21,9 +21,10 @@ const Navbar = ({ scrollToAbout }) => {
           <div className={"collapse navbar-collapse justify-content-center"} id={"navbarNavAltMarkup"}>
             <div className={"navbar-nav mx-auto fs-4"}>
               <Link className={"nav-link active"} aria-current={"page"} to={"/"}>Home</Link>
-              <button className={"nav-link btn btn-link"} onClick={() => scrollToAbout('about')}>About</button>
+              <button className={"nav-link btn btn-link"} onClick={() => scrollToMenu('about')}>About</button>
+              <button className={'nav-link btn btn-link'} onClick={() => scrollToMenu('expertise')}>Expertise</button>
               {/* <Link className={"nav-link"} to={"/about"}>About</Link> */}
-              <a className={"nav-link"} href={"/"}>Expertise</a>
+              {/* <a className={"nav-link"} href={"/"}>Expertise</a> */}
               <a className={"nav-link"} href={"/"}>Work</a>
               <a className={"nav-link"} href={"/"}>Contact</a>
             </div>
