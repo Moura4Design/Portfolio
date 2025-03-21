@@ -2,18 +2,23 @@ import React, {useRef} from 'react';
 import Navbar from './Navbar';
 import About from './About';
 import Expertise from './Expertise';
+import Work from './Work';
 
 const Home = () => {
   const aboutRef = useRef(null);
-  const expertiseRef = useRef(null)
+  const expertiseRef = useRef(null);
+  const workRef = useRef(null);
 
   const scrollToMenu = (navbar) => {
     if(navbar === 'about') {
       console.log('navbar ==>', navbar)
       aboutRef.current?.scrollIntoView({ behavior: "smooth" });
     } 
-    if (navbar === 'expertise') {
-      expertiseRef.current?.scrollIntoView({ behavior: "smooth" })
+    if(navbar === 'expertise') {
+      expertiseRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+    if(navbar === 'work') {
+      workRef.current?.scrollIntoView({ behavior: 'smooth' });
     }
     
   };
@@ -45,6 +50,9 @@ const Home = () => {
     </section>
     <section ref={expertiseRef} className={'section'}>
       <Expertise />
+    </section>
+    <section ref={workRef} className={'section'}>
+      <Work />
     </section>
   </div>
   )

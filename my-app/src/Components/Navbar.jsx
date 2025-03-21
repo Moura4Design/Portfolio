@@ -23,9 +23,7 @@ const Navbar = ({ scrollToMenu }) => {
               <Link className={"nav-link active"} aria-current={"page"} to={"/"}>Home</Link>
               <button className={"nav-link btn btn-link"} onClick={() => scrollToMenu('about')}>About</button>
               <button className={'nav-link btn btn-link'} onClick={() => scrollToMenu('expertise')}>Expertise</button>
-              {/* <Link className={"nav-link"} to={"/about"}>About</Link> */}
-              {/* <a className={"nav-link"} href={"/"}>Expertise</a> */}
-              <a className={"nav-link"} href={"/"}>Work</a>
+              <button className={'nav-link btn btn-link'} onClick={() => scrollToMenu('work')}>Work</button>
               <a className={"nav-link"} href={"/"}>Contact</a>
             </div>
             <div className={'navbar-nav ms-auto fs-4'}>
