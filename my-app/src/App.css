@@ -125,6 +125,16 @@
   border-radius: 2px;
 }
 
+.card {
+  background: #212529; /* Dark background */
+  color: white; /* Text color */
+  border: 2px solid transparent; /* Transparent border as a base */
+  border-image: linear-gradient(45deg, #ff7f7f, #ffb347, #fffacd) 1; /* Gradient border */
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
 
 
 
