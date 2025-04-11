@@ -1,0 +1,17 @@
+{
+  "react": {
+    "icon": "fab fa-react",
+    "title": "React.js",
+    "text": "I have a deep understanding of React's core principles, including component based architecture."
+  },
+  "javascript": {
+    "icon": "fab fa-js-square",
+    "title": "Javascript",
+    "text": "I have deep expertise in JavaScript, including ES6+ features, asynchronous programming."
+  },
+  "node": {
+    "icon": "",
+    "title": "",
+    "text": ""
+  }
+}
