@@ -1,7 +1,7 @@
 import React from 'react';
-import { Carousel, Card, Row, Col } from 'react-bootstrap';
 
 const Expertise = () => {
+
   return(
     <React.Fragment>
       <div className={"title-wrapper"}>
@@ -15,7 +15,7 @@ const Expertise = () => {
                 <div className='col-xs-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center'>
                   <div className='card' style={{width: '18rem'}}>
                     <div className='card-body'>
-                      <i className="fab fa-react fa-3x" /> {/* React Icon */}
+                      <i className="fab fa-react fa-3x" /> 
                       React.js
                       <p className='mt-3'>I have a deep understanding of React&apos;s core principles, including component based architecture.</p>
                     </div>
@@ -24,7 +24,7 @@ const Expertise = () => {
                 <div className='col-xs-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center'>
                   <div className='card' style={{width: '18rem'}}>
                     <div className='card-body'>
-                      <i className="fab fa-js-square fa-3x" /> {/* JS Icon */}
+                      <i className="fab fa-js-square fa-3x" /> 
                       Javascript
                       <p className='mt-3'>I have deep expertise in JavaScript, including ES6+ features, asynchronous programming.</p>
                     </div>
@@ -37,7 +37,7 @@ const Expertise = () => {
                 <div className='col-xs-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center'>
                   <div className='card' style={{width: '18rem'}}>
                     <div className='card-body'>
-                      <i className="fab fa-node-js fa-3x" />  {/* Node.js Icon */}
+                      <i className="fab fa-node-js fa-3x" />  
                       Node.js
                       <p className='mt-3'>I have a deep understanding of React&apos;s core principles, including component based architecture.</p>
                     </div>
@@ -46,7 +46,7 @@ const Expertise = () => {
                 <div className='col-xs-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center'>
                   <div className='card' style={{width: '18rem'}}>
                     <div className='card-body'>
-                      <i className="fab fa-html5 fa-3x"></i> {/* HTML5 Icon */}
+                      <i className="fab fa-html5 fa-3x"></i> 
                       HTML5
                       <p className='mt-3'>I have deep expertise in JavaScript, including ES6+ features, asynchronous programming.</p>
                     </div>
@@ -59,7 +59,7 @@ const Expertise = () => {
                 <div className='col-xs-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center'>
                   <div className='card' style={{width: '18rem'}}>
                     <div className='card-body'>
-                      <i className="fab fa-bootstrap fa-3x" /> {/* Bootstrap Icon */}
+                      <i className="fab fa-bootstrap fa-3x" /> 
                       Bootstrap
                       <p className='mt-3'>I have a deep understanding of React&apos;s core principles, including component based architecture.</p>
                     </div>
@@ -69,7 +69,7 @@ const Expertise = () => {
                 <div className='col-xs-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center'>
                   <div className='card' style={{width: '18rem'}}>
                     <div className='card-body'>
-                      <i className="fab fa-css3-alt fa-3x" /> {/* CSS Icon */}
+                      <i className="fab fa-css3-alt fa-3x" /> 
                       CSS
                       <p className='mt-3'>I have deep expertise in JavaScript, including ES6+ features, asynchronous programming.</p>
                     </div>
@@ -83,7 +83,7 @@ const Expertise = () => {
                 <div className='col-xs-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center'>
                   <div className='card' style={{width: '18rem'}}>
                     <div className='card-body'>
-                      <i className="fas fa-database fa-3x" /> {/* SQL Icon */}
+                      <i className="fas fa-database fa-3x" /> 
                       SQL
                       <p className='mt-3'>I have a deep understanding of React&apos;s core principles, including component based architecture.</p>
                     </div>
@@ -93,7 +93,7 @@ const Expertise = () => {
                 <div className='col-xs-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center'>
                   <div className='card' style={{width: '18rem'}}>
                     <div className='card-body'>
-                      <i className="fab fa-git-alt fa-3x" /> {/* Git Icon */}
+                      <i className="fab fa-git-alt fa-3x" /> 
                       Git
                       <p className='mt-3'>I have deep expertise in JavaScript, including ES6+ features, asynchronous programming.</p>
                     </div>

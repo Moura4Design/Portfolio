@@ -45,13 +45,13 @@ const Home = () => {
         </div>
       </div>
     </div>
-    <section ref={aboutRef} className={'section'}>
+    <section ref={aboutRef} className={'section w-100 vh-100'}>
       <About />
     </section>
-    <section ref={expertiseRef} className={'section'}>
+    <section ref={expertiseRef} className={'section w-100 vh-100'}>
       <Expertise />
     </section>
-    <section ref={workRef} className={'section'}>
+    <section ref={workRef} className={'section w-100 vh-100'}>
       <Work />
     </section>
   </div>
