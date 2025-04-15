@@ -42,16 +42,17 @@ const Home = () => {
         </div>
         <div className={'col-md-6'}>
           <p>This is the second column where you can add more content.</p>
+          <button type="button" className='btn btn-warning'>DownLoad C.V.</button>
         </div>
       </div>
     </div>
-    <section ref={aboutRef} className={'section w-100 vh-100'}>
+    <section ref={aboutRef} className={'section w-100 min-vh-100'}>
       <About />
     </section>
-    <section ref={expertiseRef} className={'section w-100 vh-100'}>
+    <section ref={expertiseRef} className={'section w-100 min-vh-100'}>
       <Expertise />
     </section>
-    <section ref={workRef} className={'section w-100 vh-100'}>
+    <section ref={workRef} className={'section w-100 min-vh-100'}>
       <Work />
     </section>
   </div>

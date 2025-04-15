@@ -3,22 +3,22 @@ const skills = [
   {
     icon: "fab fa-react",
     title: "React.js",
-    description: "I have a deep understanding of React's core principles, including component based architecture."
+    description: "Experienced in building scalable, high quality web apps using React.js. Proficient with React Router, Redux Toolkit, Hooks, and component based architecture. Skilled in authentication and third party integrations."
   },
   {
     icon: "fab fa-js-square",
     title: "Javascript",
-    description: "I have deep expertise in JavaScript, including ES6+ features, asynchronous programming."
+    description: "Strong knowledge of JavaScript (ES6+), with experience in building dynamic, interactive web applications. Comfortable working with asynchronous code, DOM manipulation, and modern JavaScript frameworks."
   },
   {
     icon: "fab fa-node-js",
     title: "Node.js",
-    description: "I have a deep understanding of backend development with Node.js and Express."
+    description: "Solid understanding of Node.js, with hands-on experience handling GET and POST requests, building APIs, and working with microservices architecture. I've built several projects using Node.js and continue to expand my backend skills."
   },
   {
     icon: "fab fa-html5",
     title: "HTML5",
-    description: "Proficient in semantic HTML5 and best practices for accessibility and SEO."
+    description: "HTML5 is my strong suit. I have in-depth knowledge of its features and best practices, and I excel at creating responsive layouts that work seamlessly across devices."
   },
   {
     icon: "fab fa-bootstrap",
@@ -41,3 +41,5 @@ const skills = [
     description: "Skilled in version control with Git, including branching and collaborative workflows."
   }
 ];
+
+export default skills

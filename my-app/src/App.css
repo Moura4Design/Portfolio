@@ -131,48 +131,41 @@
   border: 2px solid transparent; /* Transparent border as a base */
   border-image: linear-gradient(45deg, #ff7f7f, #ffb347, #fffacd) 1; /* Gradient border */
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
   display: inline-block;
 }
 
-
-
-
-/* .App {
-  text-align: center;
+.spinner-border {
+  width: 2rem;
+  height: 2rem;
+  border: 0.25em solid transparent; /* Transparent border */
+  /* border-radius: 50%; */
+  animation: spin 2s linear infinite;
+  transform: skew(-20deg, 5deg); /* Outer skew */
+  
+  /* Apply gradient to the border using border-image */
+  border-image: linear-gradient(to right, #ff7e5f, #feb47b) 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
+@keyframes spin {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
-} */
+}
+
+.badge {
+  background: linear-gradient(45deg, #ff7f7f, #ffb347, #fffacd);
+  color: #212529;
+  font-size: 0.75rem;
+  padding: 0.3em 0.55em;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1m;
+}
+
+
