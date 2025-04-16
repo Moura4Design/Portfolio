@@ -3,11 +3,14 @@ import Navbar from './Navbar';
 import About from './About';
 import Expertise from './Expertise';
 import Work from './Work';
+import Footer from './Footer';
+import Contact from './Contact';
 
 const Home = () => {
   const aboutRef = useRef(null);
   const expertiseRef = useRef(null);
   const workRef = useRef(null);
+  const contactRef = useRef(null);
 
   const scrollToMenu = (navbar) => {
     if(navbar === 'about') {
@@ -19,6 +22,9 @@ const Home = () => {
     }
     if(navbar === 'work') {
       workRef.current?.scrollIntoView({ behavior: 'smooth' });
+    } 
+    if(navbar === 'contact') {
+      contactRef.current?.scrollIntoView({ behavior: 'smooth' })
     }
     
   };
@@ -55,6 +61,10 @@ const Home = () => {
     <section ref={workRef} className={'section w-100 min-vh-100'}>
       <Work />
     </section>
+    <section ref={contactRef} className={'section w-100 min-vh-100'}>
+      <Contact />
+    </section>
+    <Footer />
   </div>
   )
 }

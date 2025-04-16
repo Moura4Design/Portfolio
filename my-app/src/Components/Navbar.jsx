@@ -24,7 +24,7 @@ const Navbar = ({ scrollToMenu }) => {
               <button className={"nav-link btn btn-link"} onClick={() => scrollToMenu('about')}>About</button>
               <button className={'nav-link btn btn-link'} onClick={() => scrollToMenu('expertise')}>Expertise</button>
               <button className={'nav-link btn btn-link'} onClick={() => scrollToMenu('work')}>Work</button>
-              <a className={"nav-link"} href={"/"}>Contact</a>
+              <button className={'nav-link btn btn-link'} onClick={() => scrollToMenu('contact')}>Contact</button>
             </div>
             <div className={'navbar-nav ms-auto fs-4'}>
               <Link className={"nav-link"} target="_blank" rel="noopener noreferrer" to={"https://www.linkedin.com/in/tania-moura/"}><i className={'bi bi-linkedin'} /></Link>

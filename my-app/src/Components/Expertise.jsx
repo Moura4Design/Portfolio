@@ -18,7 +18,11 @@ const Expertise = () => {
                     <div className='card text-center' style={{width: '18rem'}}>
                       <div className='card-body'>
                         <i className={`${skill.icon} fa-3x`} /> 
-                          <span className='ms-2'>{skill.title}</span>
+                        <span className='ms-2'>{skill.title}</span>
+                        <div>
+                          <button className='btn btn-primary btn-sm mt-1' onClick={() => console.log('open')}>Open</button>
+                        </div>
+                        
                         <p className='mt-3'>{skill.description}</p>
                       </div>
                     </div>

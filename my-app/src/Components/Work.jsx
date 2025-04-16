@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import projects from './Data/projects';
 
 const Work = () => {
     const calculateYearsAgo = (startYear) => {
@@ -21,27 +22,29 @@ const Work = () => {
       </div>
       <div>
         <div className='container mt-5'>
-          <div className='card d-flex'>
-            <div className='card-header'>
-              <div className="d-flex justify-content-between align-items-center">
-                <h5 className="mb-0">
-                  JukeBox
-                  <span className="badge small-badge ms-1">HTML5</span>
-                  <span className="badge ms-1">CSS</span>
-                  <span className="badge ms-1">Javascript</span>
-                </h5>
-                <small>{calculateYearsAgo(2018)}</small>
-              </div>       
-            </div>
-            <div className='card-body'>
-              <p>Project Overview: This project was built during my studies at New York Code + Academy. It is an assignment where I was tasked with creating a Jukebox music player. The project features a simple web-based jukebox/music player that allows users to control playback with the following actions: Play, Pause, Stop, Preview, Next, Previous</p>
-              <div className='d-flex justify-content-end'>
-                <Link className={"nav-link"} target="_blank" rel="noopener noreferrer" to={"https://github.com/Moura4Design/My_JukeBox"}>Github <i className={'bi bi-github'} /></Link>
+          {projects.map((project, index) => (
+            <div key={index} className='card d-flex'>
+              <div className='card-header'>
+                <div className="d-flex justify-content-between align-items-center">
+                  <h5 className='mb-0'>
+                    {project.title}
+                    {project.technologies.map((tec, index) => (
+                      <span key={index} className='badge ms-1'>{tec}</span>
+                    ))}
+                  </h5>
+                  <small>{calculateYearsAgo(project.data)}</small>
+                </div>
+              </div>
+              <div className='card-body'>
+                <p><b>Project Overview: </b>{project.description}</p>
+                <div className='d-flex justify-content-end'>
+                  <Link className={"nav-link"} target="_blank" rel="noopener noreferrer" to={project.link}>Github <i className={'bi bi-github'} /></Link>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+          ))}
         
+        </div> 
       </div>
 
     </React.Fragment>
