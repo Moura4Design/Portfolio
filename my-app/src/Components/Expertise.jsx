@@ -1,7 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import skills from './Data/skills';
+import ExpertiseModal from './Modal/ExpertiseModal';
 
 const Expertise = () => {
+  const [open, setOpen] = useState(false);
+  const [sendDescription, setSendDescription] = useState(null);
+  const [sendTitle, setSendTitle] = useState(null);
+
+  const handleOpenModal = (description, title) => {
+    console.log('description ==>', description)
+    setOpen(true);
+    setSendDescription(description);
+    setSendTitle(title)
+  }
 
   return(
     <React.Fragment>
@@ -20,10 +31,8 @@ const Expertise = () => {
                         <i className={`${skill.icon} fa-3x`} /> 
                         <span className='ms-2'>{skill.title}</span>
                         <div>
-                          <button className='btn btn-primary btn-sm mt-1' onClick={() => console.log('open')}>Open</button>
+                          <button className='btn btn-sm mt-3 btn-color' onClick={() => handleOpenModal(skill.description, skill.title)}>Open</button>
                         </div>
-                        
-                        <p className='mt-3'>{skill.description}</p>
                       </div>
                     </div>
                   </div>
@@ -38,7 +47,9 @@ const Expertise = () => {
                       <div className='card-body'>
                         <i className={`${skill.icon} fa-3x`} />  
                           <span className='ms-2'>{skill.title}</span>
-                        <p className='mt-3'>{skill.description}</p>
+                          <div>
+                            <button className='btn btn-sm mt-3 btn-color' onClick={() => handleOpenModal(skill.description, skill.title)}>Open</button>
+                          </div>
                       </div>
                     </div>
                   </div>
@@ -53,7 +64,9 @@ const Expertise = () => {
                       <div className='card-body'>
                         <i className={`${skill.icon} fa-3x`} /> 
                           <span className='ms-2'>{skill.title}</span>
-                        <p className='mt-3'>{skill.description}</p>
+                          <div>
+                            <button className='btn btn-sm mt-3 btn-color' onClick={() => handleOpenModal(skill.description, skill.title)}>Open</button>
+                          </div>
                       </div>
                     </div>
                   </div>
@@ -69,7 +82,9 @@ const Expertise = () => {
                       <div className='card-body'>
                         <i className={`${skill.icon} fa-3x`} /> 
                           <span className='ms-2'>{skill.title}</span>
-                        <p className='mt-3'>{skill.description}</p>
+                          <div>
+                            <button className='btn btn-sm mt-3 btn-color' onClick={() => handleOpenModal(skill.description, skill.title)}>Open</button>
+                          </div>
                       </div>
                     </div>
                   </div>
@@ -89,6 +104,7 @@ const Expertise = () => {
         </div>
          
       </div>
+      <ExpertiseModal description={sendDescription} title={sendTitle} show={open} onClose={() => setOpen(false)} />
     </React.Fragment>
   )
 }
