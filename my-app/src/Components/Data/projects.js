@@ -7,6 +7,13 @@ const projects = [
   //   link: '',
   // },
   {
+    title: "Website about jewelry - HAV",
+    technologies: ["HTML", "CSS", "Javascript", "Node.js"],
+    data: '2018',
+    description: 'This website was developed during my time as a freelance developer. It is a custom built e-commerce platform focused on jewelry, developed using HTML, CSS, JavaScript, and Node.js. The website was created entirely from scratch without the use of templates, resulting in a fully unique and tailored design.',
+    link: 'https://github.com/Moura4Design/Website-about-jewelry---HAV',
+  },
+  {
     title: "Chat-realTime",
     technologies: ["HTML5", "CSS", "Javascript", "Node.js"],
     data: '2018',
@@ -19,7 +26,7 @@ const projects = [
     data: '2017',
     description: 'This project was built during my studies at New York Code + Academy. It is an assignment where I was tasked with creating a Jukebox music player. The project features a simple web-based jukebox/music player that allows users to control playback with the following actions: Play, Pause, Stop, Preview, Next, Previous.',
     link: 'https://github.com/Moura4Design/My_JukeBox'
-  },
+  }
 ] 
 
 export default projects

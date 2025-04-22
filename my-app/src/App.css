@@ -197,5 +197,14 @@
   border-image: linear-gradient(45deg, #ff7f7f, #ffb347, #fffacd) 1; /* Gradient border */
 }
 
+.link-hover:hover {
+  background: linear-gradient(45deg, #e45a5a, #e09424, #e0e0b3);
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text; /* WebKit-specific */
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Ensures text stays transparent in non-supported browsers */
+  display: inline-block;
+}
+
 
 

@@ -3,13 +3,13 @@ import skills from './Data/skills';
 import ExpertiseModal from './Modal/ExpertiseModal';
 
 const Expertise = () => {
-  const [open, setOpen] = useState(false);
+  const [Details, setDetails] = useState(false);
   const [sendDescription, setSendDescription] = useState(null);
   const [sendTitle, setSendTitle] = useState(null);
 
-  const handleOpenModal = (description, title) => {
+  const handleDetailsModal = (description, title) => {
     console.log('description ==>', description)
-    setOpen(true);
+    setDetails(true);
     setSendDescription(description);
     setSendTitle(title)
   }
@@ -31,7 +31,7 @@ const Expertise = () => {
                         <i className={`${skill.icon} fa-3x`} /> 
                         <span className='ms-2'>{skill.title}</span>
                         <div>
-                          <button className='btn btn-sm mt-3 btn-color' onClick={() => handleOpenModal(skill.description, skill.title)}>Open</button>
+                          <button className='btn btn-sm mt-3 btn-color' onClick={() => handleDetailsModal(skill.description, skill.title)}>Details</button>
                         </div>
                       </div>
                     </div>
@@ -48,7 +48,7 @@ const Expertise = () => {
                         <i className={`${skill.icon} fa-3x`} />  
                           <span className='ms-2'>{skill.title}</span>
                           <div>
-                            <button className='btn btn-sm mt-3 btn-color' onClick={() => handleOpenModal(skill.description, skill.title)}>Open</button>
+                            <button className='btn btn-sm mt-3 btn-color' onClick={() => handleDetailsModal(skill.description, skill.title)}>Details</button>
                           </div>
                       </div>
                     </div>
@@ -65,7 +65,7 @@ const Expertise = () => {
                         <i className={`${skill.icon} fa-3x`} /> 
                           <span className='ms-2'>{skill.title}</span>
                           <div>
-                            <button className='btn btn-sm mt-3 btn-color' onClick={() => handleOpenModal(skill.description, skill.title)}>Open</button>
+                            <button className='btn btn-sm mt-3 btn-color' onClick={() => handleDetailsModal(skill.description, skill.title)}>Details</button>
                           </div>
                       </div>
                     </div>
@@ -83,7 +83,7 @@ const Expertise = () => {
                         <i className={`${skill.icon} fa-3x`} /> 
                           <span className='ms-2'>{skill.title}</span>
                           <div>
-                            <button className='btn btn-sm mt-3 btn-color' onClick={() => handleOpenModal(skill.description, skill.title)}>Open</button>
+                            <button className='btn btn-sm mt-3 btn-color' onClick={() => handleDetailsModal(skill.description, skill.title)}>Details</button>
                           </div>
                       </div>
                     </div>
@@ -104,7 +104,7 @@ const Expertise = () => {
         </div>
          
       </div>
-      <ExpertiseModal description={sendDescription} title={sendTitle} show={open} onClose={() => setOpen(false)} />
+      <ExpertiseModal description={sendDescription} title={sendTitle} show={Details} onClose={() => setDetails(false)} />
     </React.Fragment>
   )
 }

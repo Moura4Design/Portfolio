@@ -38,7 +38,7 @@ const Work = () => {
               <div className='card-body'>
                 <p><b>Project Overview: </b>{project.description}</p>
                 <div className='d-flex justify-content-end'>
-                  <Link className={"nav-link"} target="_blank" rel="noopener noreferrer" to={project.link}>Github <i className={'bi bi-github'} /></Link>
+                  <Link className={"nav-link link-hover"} target="_blank" rel="noopener noreferrer" to={project.link}>Github <i className={'bi bi-github'} /></Link>
                 </div>
               </div>
             </div>
