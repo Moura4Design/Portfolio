@@ -7,6 +7,14 @@ const projects = [
   //   link: '',
   // },
   {
+    title: "Alban-Website",
+    technologies: ["React.js", "Node/js"],
+    data: '2020',
+    description: 'This photography website was developed for a client during my time as a freelance developer. Built entirely in React.js, the site showcases visual elements like slideshows, image galleries, form cards, and tabbed sections. Several key packages were used to enhance functionality and multilingual support, including:react-photo-gallery, react-translate-component, counterpart, and react-interpolate-component, bootstrap for UI components and responsive layout.',
+    link: 'https://github.com/Moura4Design/Alban-Website',
+    link2: ''
+  },
+  {
     title: "Website about jewelry - HAV",
     technologies: ["HTML", "CSS", "Javascript", "Node.js"],
     data: '2018',
