@@ -6,7 +6,13 @@ const Work = () => {
     const calculateYearsAgo = (startYear) => {
       const currentYear = new Date().getFullYear();
       const difference = currentYear - startYear;
-      return `${difference} years ago`; // Return in the format "X years ago"
+      if (difference === 0) {
+        return currentYear;
+      }
+    
+      return `${difference} year${difference !== 1 ? "s" : ""} ago`;
+      
+      // return `${difference} years ago`; // Return in the format "X years ago"
     };
 
   return (
@@ -38,6 +44,7 @@ const Work = () => {
               <div className='card-body'>
                 <p><b>Project Overview: </b>{project.description}</p>
                 <div className='d-flex justify-content-end'>
+                  {project.link2 ? <Link className={"nav-link link-hover me-3"} target="_blank" rel="noopener noreferrer" to={project.link2}>Online</Link>  : null}
                   <Link className={"nav-link link-hover"} target="_blank" rel="noopener noreferrer" to={project.link}>Github <i className={'bi bi-github'} /></Link>
                 </div>
               </div>

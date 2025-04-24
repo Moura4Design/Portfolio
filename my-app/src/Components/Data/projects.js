@@ -7,12 +7,26 @@ const projects = [
   //   link: '',
   // },
   {
+    title: "ProjectHub",
+    technologies: ["React.js", "Redux Toolkit", "JSON", "Bootstrap"],
+    data: '2025',
+    description: 'This project utilizes React.js for frontend development, JSON Server as a mock backend and Redux Toolkit for state management. It includes authentication with token storage, user management, and dynamic finance selection using Redux Toolkit.',
+    link: 'https://github.com/Moura4Design/ProjectHub',
+  },
+  {
+    title: "Book-Library",
+    technologies: ["React.js", "Redux Toolkit", "Bootstrap"],
+    data: '2025',
+    description: '',
+    link: '',
+  },
+  {
     title: "Alban-Website",
-    technologies: ["React.js", "Node/js"],
+    technologies: ["React.js", "Node.js", "Bootstrap"],
     data: '2020',
     description: 'This photography website was developed for a client during my time as a freelance developer. Built entirely in React.js, the site showcases visual elements like slideshows, image galleries, form cards, and tabbed sections. Several key packages were used to enhance functionality and multilingual support, including:react-photo-gallery, react-translate-component, counterpart, and react-interpolate-component, bootstrap for UI components and responsive layout.',
     link: 'https://github.com/Moura4Design/Alban-Website',
-    link2: ''
+    link2: 'https://albanwagner.nl/'
   },
   {
     title: "Website about jewelry - HAV",
