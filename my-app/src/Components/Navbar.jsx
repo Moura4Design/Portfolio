@@ -20,7 +20,7 @@ const Navbar = ({ scrollToMenu }) => {
           </button>
           <div className={"collapse navbar-collapse justify-content-center"} id={"navbarNavAltMarkup"}>
             <div className={"navbar-nav mx-auto fs-4"}>
-              <Link className={"nav-link active"} aria-current={"page"} to={"/"}>Home</Link>
+              <button className={"nav-link active"} aria-current={"page"} to={"/"}>Home</button>
               <button className={"nav-link btn btn-link"} onClick={() => scrollToMenu('about')}>About</button>
               <button className={'nav-link btn btn-link'} onClick={() => scrollToMenu('expertise')}>Expertise</button>
               <button className={'nav-link btn btn-link'} onClick={() => scrollToMenu('work')}>Work</button>

@@ -5,6 +5,8 @@ import Expertise from './Expertise';
 import Work from './Work';
 import Footer from './Footer';
 import Contact from './Contact';
+import MouseFollower from './MouseFollower';
+import BackToHome from './BackToHome ';
 
 const Home = () => {
   const aboutRef = useRef(null);
@@ -31,6 +33,7 @@ const Home = () => {
 
   return (
     <div className={'App'}>
+    <MouseFollower />
     <Navbar scrollToMenu={scrollToMenu} />
     <div className={'container'}>
       <div className={'row justify-content-center align-items-center vh-100'}>
@@ -65,6 +68,7 @@ const Home = () => {
       <Contact />
     </section>
     <Footer />
+    <BackToHome />
   </div>
   )
 }

@@ -5,7 +5,7 @@ const About = () => {
     <React.Fragment>
       <div className='container'>
         <div className={'row'}>
-          <div className={'col-md-6'}>
+          <div className={'col-lg-6'}>
             <div className={'title-wrapper'}>
               <h2 className={'text-center title'}>About</h2>
             </div>
@@ -22,7 +22,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className={'col-md-6'}>
+          <div className={'col-lg-6'}>
             <div className={"container"}>
               <div className={"row mb-4"}>
                 <div className={"col-7 order-last"} style={{zIndex: 1}}>

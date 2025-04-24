@@ -206,5 +206,42 @@
   display: inline-block;
 }
 
+.circle {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: left 0.05s linear, top 0.05s linear, opacity 0.2s ease;
+  z-index: 9999;
+  
+  /* Circle with gradient border using background and masking */
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  -webkit-mask: 
+    radial-gradient(farthest-side, transparent calc(100% - 3px), black calc(100% - 3px));
+  mask: 
+    radial-gradient(farthest-side, transparent calc(100% - 3px), black calc(100% - 3px))
+}
+
+.back-home {
+  position: fixed;
+  bottom: 2rem; /* Adjust to your preference */
+  right: 2rem;  /* Adjust to your preference */
+  z-index: 1000;
+  padding: 12px;
+  border: 0.25em solid transparent; /* Transparent border */
+  border-radius: 50%; /* Makes the button circular */
+  animation: spin 50s linear infinite; /* Animation (spinning) */
+  transform: skew(-20deg, 5deg); /* Outer skew */
+  
+  /* Apply gradient to the border using border-image */
+  border-image: linear-gradient(45deg, #ff7f7f, #ffb347, #fffacd) 1;
+  
+  background-color: transparent; /* Transparent background */
+  color: white; /* Text color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
 
 
