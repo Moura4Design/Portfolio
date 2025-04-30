@@ -49,9 +49,13 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className={'col-md-6'}>
-          <p>This is the second column where you can add more content.</p>
-          <button type="button" className='btn btn-warning'>DownLoad C.V.</button>
+        <div className={'col-md-6 p-4 text-center'}>
+          <h2>Hi, I'm Tânia Moura <span className='wave'>&#128075;</span></h2>
+          <p>Frontend Developer with 5+ years of international experience. Specialized in React.js, JavaScript, HTML/CSS, and API integrations. 
+            <br />Always evolving committed to continuous learning and keeping up to date with the latest in web development.
+          </p>
+          {/* <h2>Hi, I'm Tânia Moura <span className='wave'>👋&#128075;</span></h2> */}
+          {/* <button type="button" className='btn btn-warning'>DownLoad C.V.</button> */}
         </div>
       </div>
     </div>

@@ -2,7 +2,11 @@ import React from 'react';
 
 const Footer  = () => {
   return (
-    <div>Footer</div>
+    <React.Fragment>
+      <footer className="footer">
+        <p>© {new Date().getFullYear()} Tânia Moura</p>
+      </footer>
+    </React.Fragment>
   )
 }
 
