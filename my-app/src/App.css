@@ -233,8 +233,8 @@
   padding: 12px;
   border: 0.25em solid transparent; /* Transparent border */
   border-radius: 50%; /* Makes the button circular */
-  animation: spin 50s linear infinite; /* Animation (spinning) */
-  transform: skew(-20deg, 5deg); /* Outer skew */
+  /* animation: spin 50s linear infinite; /* Animation (spinning) */
+  /* transform: skew(-20deg, 5deg); /* Outer skew */
   
   /* Apply gradient to the border using border-image */
   border-image: linear-gradient(45deg, #ff7f7f, #ffb347, #fffacd) 1;

@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import Navbar from './Navbar';
 import About from './About';
 import Expertise from './Expertise';
@@ -13,6 +13,23 @@ const Home = () => {
   const expertiseRef = useRef(null);
   const workRef = useRef(null);
   const contactRef = useRef(null);
+  const [showBackToHome, setShowBackToHome] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Get the top of the viewport
+      const scrollTop = window.scrollY;
+  
+      // Show BackToHome if scrolled down more than 100px
+      setShowBackToHome(scrollTop > 100);
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const scrollToMenu = (navbar) => {
     if(navbar === 'about') {
@@ -72,7 +89,7 @@ const Home = () => {
       <Contact />
     </section>
     <Footer />
-    <BackToHome />
+    {showBackToHome && <BackToHome />}
   </div>
   )
 }
