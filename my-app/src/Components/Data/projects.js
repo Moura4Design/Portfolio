@@ -15,10 +15,10 @@ const projects = [
   },
   {
     title: "Book-Library",
-    technologies: ["React.js", "Redux Toolkit", "Bootstrap"],
+    technologies: ["React.js", "Redux Toolkit", "JSON", "Bootstrap"],
     data: '2025',
-    description: '',
-    link: '',
+    description: 'A responsive web application for managing a personal book collection. Users can add, edit, and delete books, as well as search and filter through their library. The project demonstrates a full-featured CRUD interface built with modern frontend technologies.',
+    link: 'https://github.com/Moura4Design/Book-library',
   },
   {
     title: "Alban-Website",
