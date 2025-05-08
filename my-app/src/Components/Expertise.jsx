@@ -102,8 +102,17 @@ const Expertise = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <div className='text-center mt-4 p-4'>
-          <h3>Just a heads-up: someone with great unit testing and DevOps skills is coming to help out soon!</h3>
+        <div className='container text-center mt-4 p-4'>
+          <div className='row'>
+            <div className='col-md-1'></div>
+            <div className='col-md-10'>
+            <div className="announcement">
+              <h3>⚡️ Transformation incoming! I’m investing in DevOps and testing skills to elevate my career.</h3>
+            </div>
+            </div>
+            <div className='col-md-1'></div>
+          </div>
+          {/* <h3>Just a heads-up: someone with great unit testing and DevOps skills is coming to help out soon!</h3> */}
         </div>
       </div>
       <ExpertiseModal description={sendDescription} title={sendTitle} show={Details} onClose={() => setDetails(false)} />

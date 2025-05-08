@@ -9,7 +9,7 @@ const ExpertiseModal = ({title, description, show, onClose}) => {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title">Expertise Detail {title}</h5>
+              <h5 className="modal-title">Expertise {title}</h5>
               {/* <button type="button close" className="btn-close" onClick={onClose} aria-label="Close"></button> */}
             </div>
             <div className="modal-body">

@@ -23,8 +23,11 @@ const About = () => {
             </div>
           </div>
           <div className={'col-lg-6'}>
-            <div className={"container"}>
-              <div className={"row mb-4"}>
+            <div className={"container text-center"}>
+              <div className='avatar-wrapper mx-auto'>
+                <img className={"img-fluid rounded-circle border shadow d-block mx-auto avatar-pulse"} src={"images/Tania.png"} alt={'Avatar'} />
+              </div>
+              {/* <div className={"row mb-4"}>
                 <div className={"col-7 order-last"} style={{zIndex: 1}}>
                   <div className={"content-image float-end"}>
                     <img className={"img-fluid"} src={"images/snow_spain.jpg"} alt={'Spain'} />
@@ -32,10 +35,10 @@ const About = () => {
                 </div>
                 <div className={"col-5"} style={{zIndex: 2}}>
                   <div style={{ marginTop: '65%', marginRight: '-65%'}}>
-                    <img className={"img-fluid"} src={"images/snow_bansko.jpg"} alt={'Bansko'} />
+                    <img className={"img-fluid"} src={"images/Tania.jpeg"} alt={'Bansko'} />
                   </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
